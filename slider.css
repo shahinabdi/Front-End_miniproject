@@ -1,0 +1,35 @@
+.swiper-container {
+    height: 768px;
+}
+
+.swiper-container img {
+    width: 100%;
+}
+
+.swiper-slide {
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+.slider_img1 {
+    display: flex;
+    flex-direction: column;
+    height: 810px;
+    width: 100%;
+    background-size: cover;
+    background-image: url(./images/Artboard_1.jpg);
+    background-repeat: no-repeat;
+}
+
+.slider_img2 {
+    display: flex;
+    flex-direction: column;
+    height: 810px;
+    width: 100%;
+    background-size: cover;
+    background-image: url(./images/Artboard_2.jpg);
+    background-repeat: no-repeat;
+}

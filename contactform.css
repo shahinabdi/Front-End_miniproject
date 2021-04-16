@@ -1,0 +1,95 @@
+.chaton {
+    cursor: pointer;
+}
+
+.hide_onpc {
+    display: none;
+}
+
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    z-index: 999;
+    transition: 1s;
+}
+
+.popup-form {
+    width: 280px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 25px;
+}
+
+.popup-form input[type=text],
+.popup-form input[type=email] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+textarea {
+    width: 90%;
+    height: 120px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.popup-form input[type=text]:focus,
+.popup-form input[type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.popup-form .button {
+    background-color: darkslateblue;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 49%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.popup-form .chatoff {
+    background-color: brown;
+    width: 60px;
+}
+
+.popup-form .button:hover,
+.chaton:hover,
+.chatoff:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.chaton:hover,
+.chatoff:hover {
+    width: 60px;
+    transition: 0.5s;
+}
+
+@media (max-width: 960px) {
+    .chaton {
+        padding: 5px;
+        z-index: 99;
+        cursor: pointer;
+        box-shadow: 0px 0px 16px 0px;
+        position: fixed;
+        bottom: 23px;
+        right: 20px;
+        transition: 0.5s;
+        width: 50px;
+        border-radius: 100%;
+        background-color: mediumvioletred
+    }
+    .hide_onpc {
+        display: block;
+    }
+}
